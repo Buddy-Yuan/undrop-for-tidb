@@ -4,6 +4,8 @@
 
 # Undrop for TiDB
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
 **在 TiDB 数据被误删且 GC 之后，直接解析 TiKV/RocksDB 底层文件，按列恢复数据。**
 绕过 SQL 层 · 直读 TiKV 磁盘 · 抓住 compaction 擦除前的恢复窗口。
 
@@ -188,3 +190,8 @@ todu decode-row --hex <HEX> --schema FILE
 > 行编码细节以 TiDB `pkg/types/row`、`pkg/types/time.go` 为准；若你的表里有
 > 本工具未能正确解码的类型，先看 `--format raw` / `decode-row` 的原始
 > payload，欢迎带着样本提 issue。
+
+
+## License
+
+[MIT](LICENSE) © 2026 Buddy-Yuan
